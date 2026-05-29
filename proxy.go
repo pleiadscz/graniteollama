@@ -171,6 +171,6 @@ func main() {
 	http.HandleFunc("/v1/models", authMiddleware(modelsHandler))
 	http.HandleFunc("/v1/chat/completions", authMiddleware(chatHandler))
 
-	log.Println("Proxy listening on :8080")
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Println("Proxy listening on :7860")
+	log.Fatal(http.ListenAndServe(":7860", nil))
 }
